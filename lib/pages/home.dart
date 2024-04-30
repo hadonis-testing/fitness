@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Breakfast',
+          title: const Text('Breakfast',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 18,
@@ -17,16 +17,16 @@ class HomePage extends StatelessWidget {
           elevation: 0.0,
           centerTitle: true,
           leading: Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             alignment: Alignment.center,
+            decoration: BoxDecoration(
+                color: const Color(0xffF7F8F8),
+                borderRadius: BorderRadius.circular(10)),
             child: SvgPicture.asset(
               'assets/icons/Arrow - Left 2.svg',
               width: 20,
               height: 20,
             ),
-            decoration: BoxDecoration(
-                color: Color(0xffF7F8F8),
-                borderRadius: BorderRadius.circular(10)),
           )),
     );
   }
