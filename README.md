@@ -1,4 +1,4 @@
-# name_your_price
+# Fitness
 
 A new Flutter project.
 
